@@ -52,7 +52,6 @@
     grid-auto-rows: 20vmin;
     place-content: center;
     grid-gap: 2.5vmin 2.5vmin;
-    cursor: pointer;
 
     grid-template-columns: repeat(2, 40vw);
 }
@@ -79,6 +78,14 @@
 
 .Sections-item > h2 {
     position: absolute;
+}
+
+.Sections-item--projects {
+    background-image: url("/assets/images/projects.jpg");
+}
+
+.Sections-item--contact {
+    background-image: linear-gradient(to bottom right, #9198e5, #1285ea);
 }
 
 /* Mobile Styles */
