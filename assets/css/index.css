@@ -1,0 +1,101 @@
+.Divider {
+    width: 80%;
+    height: 0.1rem;
+  
+    background: rgba(0,0,0,0.15);
+  
+    position: relative;
+
+    display: none;
+}
+
+.About {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    min-height: 50vmin;
+    font-size: 0.8rem;
+}
+
+.About-image {
+    flex: 1;
+
+    position: relative;
+
+    padding: 4vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.About-image > img {
+    border-radius: 100%;
+    width: 35vmin;
+    height: 35vmin;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.About-text {
+    flex: 2;
+    padding: 4vmin;
+}
+
+.Sections {
+    font-size: 2rem;
+    width: 100%;
+    margin: 4vmin 0;
+    display: grid;
+    grid-auto-rows: 20vmin;
+    place-content: center;
+    grid-gap: 2.5vmin 2.5vmin;
+    cursor: pointer;
+
+    grid-template-columns: repeat(2, 40vw);
+}
+
+.Sections-item {
+    color: #f7f7f7;
+    font-weight: 700;
+    font-size: 1.25rem;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 2.5vmin;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.Sections-item:active {
+    color: #f7f7f7;
+}
+
+.Sections-item:visited {
+    color: #f7f7f7;
+}
+
+.Sections-item > h2 {
+    position: absolute;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+    .Sections {
+        grid-template-columns: repeat(1, 90vw);
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 960px) {
+    .About {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Divider {
+        display: block;
+    }
+}

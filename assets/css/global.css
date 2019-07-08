@@ -1,0 +1,135 @@
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+html, body {
+    margin: 0;
+    font-size: calc(1vmin + 1em);
+}
+
+body {
+    background: #f4f4f4;
+    color: #403c3a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.HeaderBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+    border-bottom: 0.1rem solid rgba(0,0,0,0.15);
+    font-weight: 700;
+    height: 2.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.HeaderBar-button {
+    font-size: 1.75rem;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+.FooterBar {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding: 1.5vh;
+    background: #e0e0e0;
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+a {
+    color: #666666;
+}
+
+a:active {
+    color: #333333;
+}
+
+main {
+    flex: 1 0 auto;
+    position: relative;
+}
+
+/* http://jsfiddle.net/elin/67sw12rL/ */
+.CloseBox {
+    --color: rgba(0,0,0,0.4);
+    --hover-color: rgba(0,0,0,0.7);
+    --transition: 0.25s;
+    --button-size: 1.5rem;
+    --button-thickness: 0.15rem;
+
+    display: block;
+    position: absolute;
+    right: 2.5vmin;
+    top: 2.5vmin;
+    width: var(--button-size);
+    height: var(--button-size);
+}
+
+.CloseBox:hover {
+    --color: rgba(0,0,0,0.7);
+}
+
+.CloseBox:before {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--button-size);
+    height: 0;
+    border-top: var(--button-thickness) solid var(--color);
+    transform: rotate(45deg);
+    transform-origin: center;
+
+    transition: var(--transition);
+}
+
+.CloseBox:after {
+    content: "";
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: var(--button-size);
+    height: 0;
+    border-top: var(--button-thickness) solid var(--color);
+    transform: rotate(-45deg);
+    transform-origin: center;
+
+    transition: var(--transition);
+}
+
+main {
+    position: relative;
+}
+
+.TitleBox {
+    position: absolute;
+    top: 2.5vmin;
+    left: 2.5vmin;
+}
+
+.TitleBox > h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}

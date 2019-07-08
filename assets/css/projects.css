@@ -1,0 +1,72 @@
+.Projects {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-gap: 2.5vw 2.5vw;
+    grid-template-columns: repeat(2, 40vw);
+    grid-auto-rows: 30vmin;
+
+    margin-top: 3.5rem;
+    margin-bottom: 5vh;
+}
+
+.Projects-empty {
+    color: #666666;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.Projects-item {
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 2.5vmin;
+
+    border-radius: 1vmin;
+
+    position: relative;
+}
+
+.Projects-title {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.Projects-desc {
+    color: #666666;
+    font-size: 0.7rem;
+}
+
+.Projects-buttons {
+    position: absolute;
+    bottom: 2.5vmin;
+    left: 2.5vmin;
+    right: 2.5vmin;
+
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 1.2rem;
+}
+
+.Projects-button {
+    margin-left: 0.4rem;
+}
+
+.Projects-button > i {
+    color: rgba(0,0,0,0.5);
+    transition: color 0.25s;
+}
+
+.Projects-button > i:hover {
+    color: rgba(0,0,0,0.8);
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+    .Projects {
+        grid-template-columns: repeat(1, 90vw);
+    }
+}
