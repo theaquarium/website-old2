@@ -23,18 +23,21 @@ window.addEventListener('load', () => {
                 const mediumLink = document.createElement('a');
                 mediumLink.classList.add('Projects-button');
                 mediumLink.innerHTML = '<i class="fab fa-medium-m"></i>';
+                mediumLink.href = el.mediumLink;
                 buttonBox.appendChild(mediumLink);
             }
             if (el.githubLink != '') {
                 const githubLink = document.createElement('a');
                 githubLink.classList.add('Projects-button');
                 githubLink.innerHTML = '<i class="fab fa-github"></i>';
+                githubLink.href = el.githubLink;
                 buttonBox.appendChild(githubLink);
             }
             if (el.webLink != '') {
                 const webLink = document.createElement('a');
                 webLink.classList.add('Projects-button');
                 webLink.innerHTML = '<i class="fas fa-link"></i>';
+                webLink.href = el.webLink;
                 buttonBox.appendChild(webLink);
             }
             projectBox.appendChild(buttonBox);
