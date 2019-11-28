@@ -13,4 +13,11 @@ const projectList = [
         githubLink: 'https://github.com/theaquarium/recordplayer',
         mediumLink: '',
     },
+    {
+        name: 'Alphabetize',
+        desc: 'A simple game to easily learn the relative order of letters in the alphabet.',
+        webLink: 'https://alphabetize.peter.vashevko.com/',
+        githubLink: 'https://github.com/theaquarium/alphabetize',
+        mediumLink: '',
+    },
 ];
