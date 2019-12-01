@@ -27,4 +27,11 @@ const projectList = [
         githubLink: 'https://github.com/theaquarium/diceroller',
         mediumLink: '',
     },
+    {
+        name: 'DVD Corner Screensaver',
+        desc: 'The DVD Screensaver but the logo only goes into the corners.',
+        webLink: 'https://dvd.peter.vashevko.com/',
+        githubLink: 'https://github.com/theaquarium/dvdcorners',
+        mediumLink: '',
+    },
 ];
