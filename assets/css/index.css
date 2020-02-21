@@ -66,6 +66,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Sections-item:active {
@@ -81,11 +85,13 @@
 }
 
 .Sections-item--projects {
-    background-image: url("/assets/images/projects.jpg");
+    background: #090979;
+    background: linear-gradient(to bottom right, #090979, #f97382);
 }
 
 .Sections-item--contact {
-    background-image: linear-gradient(to bottom right, #9198e5, #1285ea);
+    background: #9198e5;
+    background: linear-gradient(to bottom right, #9198e5, #1285ea);
 }
 
 /* Mobile Styles */

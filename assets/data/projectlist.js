@@ -22,7 +22,7 @@ const projectList = [
     },
     {
         name: 'Dice Roller',
-        desc: 'A simple web dice roller app.',
+        desc: 'A dice roller webapp.',
         webLink: 'https://dice.peter.vashevko.com/',
         githubLink: 'https://github.com/theaquarium/diceroller',
         mediumLink: '',
