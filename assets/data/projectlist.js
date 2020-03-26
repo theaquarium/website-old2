@@ -34,4 +34,18 @@ const projectList = [
         githubLink: 'https://github.com/theaquarium/dvdcorners',
         mediumLink: '',
     },
+    {
+        name: 'What\'s the Point? Demo',
+        desc: 'A visual demonstration of the What\'s the Point? Problem.',
+        webLink: 'https://whatsthepoint.peter.vashevko.com/',
+        githubLink: 'https://github.com/theaquarium/whatsthepointdemo',
+        mediumLink: '',
+    },
+    {
+        name: 'Palindrome Conjecture Tester',
+        desc: 'A website to test the Palindrome Conjecture.',
+        webLink: 'https://palindromeconjecture.peter.vashevko.com/',
+        githubLink: 'https://github.com/theaquarium/palindromeconjecture',
+        mediumLink: '',
+    },
 ];
